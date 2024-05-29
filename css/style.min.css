@@ -585,7 +585,6 @@ textarea {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  width: 1000px;
 }
 .dialogbox__window .form__row * {
   text-align: center;
@@ -1068,6 +1067,10 @@ body {
   }
   .container {
     padding: 0px 15px;
+  }
+  .dialogbox__window {
+    height: 60%;
+    overflow: auto;
   }
 }
 @media only screen and (max-width: 576px) {
