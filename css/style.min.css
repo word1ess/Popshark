@@ -988,7 +988,7 @@ body {
   z-index: 2;
 }
 .content.index {
-  padding: 83px;
+  padding-top: 83px;
 }
 
 .container {
