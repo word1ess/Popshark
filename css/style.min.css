@@ -197,9 +197,17 @@ h6 {
   font-size: 20px;
   background: none;
   border-left: 1px solid hsla(173, 27%, 35%, 0.3);
+  transition: all 300ms ease;
 }
 .header__item p {
+  transition: all 300ms ease;
   margin-bottom: 0px;
+}
+.header__item:hover {
+  color: #986ad6;
+}
+.header__item:hover p {
+  color: #986ad6;
 }
 .header__menu {
   display: none;
@@ -245,6 +253,7 @@ h6 {
   position: relative;
   width: 30px;
   height: 20px;
+  cursor: pointer;
 }
 .header__dropdown .arrow::after, .header__dropdown .arrow::before {
   content: "";
@@ -394,10 +403,18 @@ textarea {
   text-decoration: none;
   background: linear-gradient(3deg, #5d86d6 0%, #986ad6 100%);
   min-width: fit-content;
+  transition: all 300ms;
+}
+.btn:hover {
+  background: linear-gradient(3deg, #5d86d6 50%, #986ad6 100%);
 }
 .btn-white {
   background: #fff;
   color: #212529;
+}
+.btn-white:hover {
+  background: #fff;
+  opacity: 0.6;
 }
 
 .section,
@@ -1000,6 +1017,24 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
+  .dialogbox__window .form {
+    padding: 90px 15px 30px;
+  }
+  .dialogbox__window .form h2 {
+    font-size: 24px;
+  }
+  .dialogbox__window .form p {
+    font-size: 16px;
+  }
+  input,
+  textarea {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
   .header__item {
     padding: 0px 15px;
     border: none;
@@ -1068,10 +1103,6 @@ body {
   .container {
     padding: 0px 15px;
   }
-  .dialogbox__window {
-    height: 60%;
-    overflow: auto;
-  }
 }
 @media only screen and (max-width: 576px) {
   .intro__row h1 {
@@ -1107,6 +1138,10 @@ body {
   }
 }
 @media only screen and (max-width: 450px) {
+  .btn {
+    max-width: 100%;
+    text-align: center;
+  }
   .header__square {
     flex: 0 0 40px;
     height: 40px;
