@@ -627,6 +627,7 @@ textarea {
   position: relative;
   height: calc(100vh - 90px);
   padding-top: 100px;
+  min-height: 1000px;
 }
 .intro * {
   color: #fff;
@@ -1016,7 +1017,7 @@ body {
   position: relative;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   .dialogbox__window .form {
     padding: 90px 15px 30px;
   }
@@ -1026,15 +1027,20 @@ body {
   .dialogbox__window .form p {
     font-size: 16px;
   }
-  input,
-  textarea {
-    padding: 15px 30px;
-    font-size: 16px;
+  .dialogbox__form {
+    margin-top: 100px;
   }
   .btn {
     font-size: 16px;
     padding: 15px 30px;
   }
+  input,
+  textarea {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 992px) {
   .header__item {
     padding: 0px 15px;
     border: none;
@@ -1059,6 +1065,9 @@ body {
   .intro__footer {
     position: absolute !important;
     bottom: -250px;
+  }
+  .dialogbox__form {
+    margin-top: 0px;
   }
   .advantage__row,
   .way__row {
